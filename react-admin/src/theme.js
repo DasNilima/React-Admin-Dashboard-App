@@ -127,7 +127,7 @@ export const themeSettings = (mode) => {
     return {
         palette: {
             mode: mode,
-            ...colors(mode === 'dark'
+            ...(mode === 'dark'
                 ? {
                     // palette values for dark mode
                     primary: {
@@ -196,7 +196,7 @@ export const themeSettings = (mode) => {
 
 // context for color mode 
 export const ColorModeContext = createContext({
-    toggleColorMode: () => { }
+    toggleColorMode: () => {},
 });
 
 export const useMode = () => {
