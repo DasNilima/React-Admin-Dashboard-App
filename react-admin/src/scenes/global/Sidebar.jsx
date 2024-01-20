@@ -35,8 +35,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     );
 };
 
-
-
 const Sidebar = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
@@ -50,7 +48,7 @@ const Sidebar = () => {
             background: `${colors.primary[400]} !important`,
             },
             "& .pro-icon-wrapper": {
-            backgroundcolor: "transparent !important",
+            backgroundColor: "transparent !important",
             },
             "& .pro-inner-item": {
             padding: "5px 35px 5px 20px !important",
